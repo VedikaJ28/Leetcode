@@ -14,6 +14,6 @@ class Solution {
                 count+=freq[i]/2;
             }
         }
-        return (count==pairs? true:false);
+        return true;
     }
 }
