@@ -5,7 +5,7 @@ class Solution {
         long sum = 0; // Initialize sum of k-mirror numbers
 
         // Loops indefinitely until 'count' number of k-mirror numbers are found
-        for (int length = 1; ; ++length) {
+        for (int length = 1;; ++length) {
             // Find the start and end range based on the half-length to construct palindrome prefixes
             int start = (int) Math.pow(10, (length - 1) / 2);
             int end = (int) Math.pow(10, (length + 1) / 2);
@@ -21,7 +21,7 @@ class Solution {
 
                 // Convert palindrome to its representation in the given base
                 String baseRepresentation = Long.toString(palindrome, base);
-              
+
                 // Check if the base representation is a palindrome
                 if (isPalindrome(baseRepresentation.toCharArray())) {
                     sum += palindrome; // Add current palindrome to sum
