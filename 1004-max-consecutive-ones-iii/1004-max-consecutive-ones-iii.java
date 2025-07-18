@@ -11,9 +11,9 @@ class Solution {
                     start++;
                 }
             }
-            if(zero<=k){
-                maxLen=Math.max(maxLen,i-start+1);
-            }    
+            
+            maxLen=Math.max(maxLen,i-start+1);
+               
         }
         return maxLen;
     }
